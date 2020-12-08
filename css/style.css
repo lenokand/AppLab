@@ -293,11 +293,13 @@ h1 {
 /* FEATURES SECTION*/
 .features .container{
     display: flex;
-    
+    max-width: 1360px;
+   /* margin-left: calc(auto -120px); */
 
 }
 .features__left{
     padding: 0 15px;
+    align-self: flex-start;
 }
 
 
@@ -308,7 +310,11 @@ h1 {
     padding: 15px;
 
 }
+.features__hide{
+    min-width: 150px;
+    /* background-color: rgb(116, 13, 13); */
 
+}
 
 .feauters_list_items{
     display: flex  ;
@@ -355,6 +361,12 @@ padding:0 30px ;
 .items-text p{
     margin: 0;
 }
+@media screen and (max-width: 1200px){
+    .features__hide{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 991px){
 .features__left {
     display: none;
@@ -366,6 +378,9 @@ padding:0 30px ;
 .companies_logo_img{
     padding: 15px;
 }
+.features__hide{
+    display: none;
+}
 }
 @media screen and (max-width: 519px){
     .feauters_list_items{
@@ -374,5 +389,8 @@ padding:0 30px ;
     }
     .companies{
         margin-bottom:60px;
+    }
+    .items-text{
+        padding: 0;
     }
 }
