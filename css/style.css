@@ -800,10 +800,10 @@ background-color: rgb(240, 240, 240);
     box-shadow: inset rgba(0,0,0,.2) 0 0 .3em;
     transition: 250ms ease;
     padding: 2px 15px 2px 2px;
-    /* text-align: left; */
+
 }
 
-.switcher_blue div{
+.switcher_blue>div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -833,7 +833,7 @@ background-color: rgb(240, 240, 240);
 
 
 
-.switcher_blue>input:checked+div {
+.switcher .switcher_blue>input:checked+div {
     background-color: #2500f9;
     color:#2500f9;
     
@@ -1047,7 +1047,7 @@ color: #2500f9;
         display: flex;
         justify-content: center;
     }
-    .question-body input, .switcher div  { 
+    .question-body input,.question-body .switcher div  { 
         display: none; 
        }
 
@@ -1081,26 +1081,26 @@ color: #2500f9;
         font-weight: 400;
         }
 
-        input  ~ .switcher{
+        .question-body   input  ~ .switcher{
             margin-bottom:15px;
             padding: 0 45px;
             box-sizing: border-box;
         }
        /* CHECKED  */
 
-    input:checked ~ .switcher>div{
+       .question-body input:checked ~ .switcher>div{
             
         display: flex;
         flex-direction:column;
     }
   
-    input:checked ~ label{
+    .question-body input:checked ~ label{
         box-sizing: border-box;
         max-width: 945px;
         flex-direction:column;
         padding: 45px;
     }
-    input:checked ~ label::after{
+    .question-body input:checked ~ label::after{
         content: '';   
     }
     @media screen and (max-width: 1200px){
