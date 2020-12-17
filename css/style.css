@@ -453,6 +453,24 @@ padding:0 30px ;
 .morefeauters_bottom_item{
  flex-basis: 25%;
 }
+@media screen and (max-width: 991px){
+    .morefeauters_subtitle{
+        padding: 0 15px;
+    }
+    .morefeauters h2 {
+        font-size: 30px;
+    }
+    .morefeauters_text_item{
+        padding: 0 15px;
+    }
+    .morefeauters_bottom{
+        padding: 0 15px;
+    }
+    .morefeauters_bottom_item{
+        margin-bottom:30px ;
+    }
+}
+
 
 /* Inegration */
 .intagration__hide{
@@ -559,6 +577,12 @@ margin: 0;
 }
 .reasonse_cards_up{
     margin-bottom: 60px;
+}
+@media screen and (max-width: 991px){
+    .reasonse_title h2{
+        padding: 0 15px 30px;
+        font-size: 32px;
+    }
 }
 
 
@@ -1084,6 +1108,15 @@ color: #2500f9;
             display: none;
         }
     }
+    @media screen and (max-width: 991px){
+
+        .questions  .question-title{
+            padding: 0 15px 60px;
+        }
+    }
+
+
+    
     
 
 
@@ -1134,6 +1167,10 @@ color: #2500f9;
         .download-buttons{
             flex-direction: column;
         }
+        .download-left{
+            padding: 0;
+        }
+     
     }
 
     /* FOOTER  */
