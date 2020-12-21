@@ -281,6 +281,8 @@ h1 {
     /* padding: 0 30px; */
 
 }
+
+
 .companies h2{
     display: inline-block;
     font-size: 16px;
@@ -305,21 +307,22 @@ h1 {
 .features__left{
     padding: 0 15px;
     align-self: flex-start;
+   
 }
-
+.features__left img{
+    max-width: 60vw;
+}
 
 
 
 .features__right{
     /* margin:  15px; */
     padding: 15px;
+    max-width: 435px;
 
 }
-.features__hide{
-    min-width: 150px;
-    /* background-color: rgb(116, 13, 13); */
 
-}
+
 
 .feauters_list_items{
     display: flex  ;
@@ -390,6 +393,10 @@ padding:0 30px ;
 .items-text{
     padding: 0;
 }
+.companies{
+    margin-top: 45px;
+    margin-bottom:60px ;
+}
 
 }
 @media screen and (max-width: 519px){
@@ -398,10 +405,14 @@ padding:0 30px ;
         margin-top: 30px;
     }
     .companies{
-        margin-bottom:60px;
+        margin-top: 45px;
+        margin-bottom:30px;
     }
     .items-text{
         padding: 0;
+    }
+    .features__right_title{
+        padding-bottom: 45px;
     }
 }
 
@@ -471,6 +482,14 @@ padding:0 30px ;
         margin-bottom:30px ;
     }
 }
+@media screen and (max-width: 549){
+    .morefeauters_container{
+        margin-bottom: 30px;
+    }
+    .morefeauters{
+        margin-bottom: 30px;
+    }
+}
 
 
 /* Inegration */
@@ -531,7 +550,7 @@ margin:0 90px;
 
 /* REASONSE */
 .reasonse{
-    margin-bottom: 150px;
+    margin-bottom: 180px;
 }
 .reasonse_title h2{
     padding: 0 95px 30px;
@@ -601,13 +620,15 @@ margin: 0;
 } */
 .ultimate .container{
     display: flex;
+    /* max-width: 1300px; */
     max-width: 1300px;
-    
+    align-items: center;
     margin: auto;
     }
 .ultimate_left{
     min-width: 630px;
 }
+
 
 .ultimate_tittle{
     max-width: 400px;
@@ -644,6 +665,12 @@ margin: 0;
 }
 .ultimate{
     margin-bottom: 175px ;
+}
+
+.ultimate_right img{
+    /* max-width: 550px */
+        max-width: 45vw;
+
 }
 
 
@@ -1147,7 +1174,15 @@ color: #2500f9;
     }
     .download-right{
         max-width: 715px;
+        flex-basis: 45%;
+        /* display: none; */
     }
+    .download-right img{
+        max-width: 715px;
+    }
+    /* @media screen and(max-width: 1630){
+
+    } */
 
     @media screen and (max-width: 991px){
     
@@ -1185,6 +1220,7 @@ color: #2500f9;
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1600px;
     }
     .footer-logo{
         color: #fff;
