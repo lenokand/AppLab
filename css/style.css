@@ -1031,10 +1031,13 @@ background-color: rgb(240, 240, 240);
     justify-content: center;
     align-items: center;
     margin-right: 9px ;
+    color: #616368;
 }
 .arrow_right:hover,
 .arrow_left:hover{
     border: solid 1px #d4dbe2;  
+    background-color: #eff3f8;
+    color: #2500f9;
 }
 
 /* .active_arrow{
