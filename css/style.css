@@ -837,6 +837,10 @@ background-color: rgb(240, 240, 240);
     display: none;
     z-index: -1;
 }
+
+.switcher_blue p{
+    margin-bottom:0;
+}
 /* !!!!!! */
 /* .switcher_blue{
     position: relative;
@@ -967,6 +971,8 @@ background-color: rgb(240, 240, 240);
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    position: relative;
+    /* для галлереи бутстрап*/
 }
 .satisfaction_left{
     max-width: 800px;
@@ -1013,8 +1019,10 @@ background-color: rgb(240, 240, 240);
     flex-basis: 13%;
 }
 
+
+
 .arrow_right,
-.arrow_left{
+ .arrow_left{
     border: solid 1px #eff3f8;
     border-radius: 50%;
     width: 45px;
@@ -1029,11 +1037,20 @@ background-color: rgb(240, 240, 240);
     border: solid 1px #d4dbe2;  
 }
 
-.active_arrow{
+/* .active_arrow{
 background-color: #eff3f8;
 color: #2500f9;
+} */
+
+/* для карусели */
+.carousel-inner{
+ 
+    height: 130px;
 }
 
+.w-150{
+    width: 120px;
+}
 .arrow_line{
     border-left: solid 1px  #eff3f8;
     height: 25px;
@@ -1071,11 +1088,22 @@ color: #2500f9;
     .satisfaction_left{
         display: none;
     }
+    .worker_card div{
+        justify-content: center;
+    }
     
+    .worker{
+        justify-content: center;
+        padding: 60px;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 767px){
 .worker{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
 }
